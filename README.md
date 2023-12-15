@@ -109,3 +109,18 @@ Each team will give a brief (three minute) presentation of their application. Pr
 - First team member: What was the biggest learning moment for your team?
 - Second team member: What was the most challenging thing about this project?
 - Third team member (if applicable): How did you manage the workflow in a group of three?
+
+Notes of codes that we dont need
+ // else if(squares[index]){
+  //   const falseSquares = [...squares]
+  //   falseSquares[index] = player2
+  //   setSquares(falseSquares)
+  // }
+// const winner = calculateWinner(squares);
+//   let status;
+//   if (winner) {
+//     alert = 'Winner: ' + winner;
+//   } else {
+//     status = 'Next player: ' + (nextPlayer ? 'X' : 'O');
+//   }
+// const [restart, setRestart] = useState(false);
