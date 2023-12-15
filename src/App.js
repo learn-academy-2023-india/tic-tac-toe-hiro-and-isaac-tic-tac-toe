@@ -12,15 +12,15 @@ const App = () => {
     newSquares[index] = player1
     setSquares(newSquares)
     nextPlayer(player1 === '❌' ? '⭕️' : '❌')
-  }
-  const winner = calculateWinner(squares)
+  
+  const winner = calculateWinner(newSquares)
   if (winner){
     alert(`Player ${winner} wins!`)
-  } else{
-    return 
+  } else if(isDraw(newSquares)) {
+    return ("its a draw!")
   }
   }
-
+  }
 const restartGame =() => {
 setSquares(Array(9).fill(null))
 nextPlayer('❌')
@@ -57,6 +57,9 @@ const calculateWinner = (squares) => {
     }
   }
   return null;
+}
+const isDraw = (squares) =>{
+  return squares.every((square) => square !== null)
 }
 export default App
 
